@@ -1,3 +1,4 @@
+# 使用int()来获取数值输入
 height = input("How tall are you, in inches? ")
 height = int(height)
 
