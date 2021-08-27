@@ -1,4 +1,4 @@
-# 在函数中修改列表
+# 禁止函数修改列表
 def print_models(unprinted_designs, completed_models):
     """
     模拟打印每个设计，直到没有未打印的设计为止
@@ -22,6 +22,7 @@ def show_completed_models(completed_models):
 unprinted_designs = ['iphone case', 'robot pendant', 'dodecahedron']
 completed_models = []
 
-print_models(unprinted_designs, completed_models)
+# 切片表示法[:]创建列表的副本。
+print_models(unprinted_designs[:], completed_models)
 print(unprinted_designs)
 show_completed_models(completed_models)
